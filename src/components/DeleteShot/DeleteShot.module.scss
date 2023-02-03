@@ -1,10 +1,10 @@
 .root {
   position: absolute;
   width: 435px;
-  height: 117px;
-  left: 531px;
+  height: 193px;
+  left: 1035px;
   top: 245px;
-
+  font-family: 'Roboto', sans-serif;
   background: #252525;
 
 
@@ -12,68 +12,64 @@
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    transition: all 1s ease;
 
     &:hover {
-      border: 1px solid #236fff;
-
-
+      border: 2px solid #236fff;
+      transition: all 1s ease;
     }
 
     .header {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       padding: 10px;
       background: #333333;
       align-items: center;
       color: #CECECE;
-
       h3 {
-        margin-right: 300px;
+        margin-right: 200px;
         font-size: 16px;
       }
 
     }
   }
 
-  .main {
+  .main  {
     font-size: 15px;
     color: #E2E2E2;
     background: #2A2A2A;
+    padding-bottom: 5px;
+    padding-top:30px;
 
-    padding-top: 20px;
-
-    p {
+    .text {
       font-size: 14px;
-      margin-left: 10px;
+      text-align: center;
+
     }
 
 
-    .finish {
+    .button {
       display: flex;
       justify-content: space-around;
       margin: 10px;
       align-items: center;
-
-      input {
-        width: 290px;
-        background: #232323;
-        border: 1px solid #333333;
+        .cancel {
+          width: 199px;
+          height: 25px;
+          background: #3D3D3D;
+          border-radius: 3px;
+          color: #BFBFBF;
+        }
+      .delete {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 199px;
+        height: 25px;
+        background: #FF005C;
         border-radius: 3px;
-        color: #E2E2E2;
 
       }
-
-      button {
-        font-size: 16px;
-        align-items: center;
-        display: flex;
-        background: #00FFBE;
-        border-radius: 2px;
-
-
       }
     }
   }
-
-}

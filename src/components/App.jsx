@@ -1,13 +1,12 @@
-import Data from './data';
-import './app.css';
-import Tree from './components/Tree/Tree';
+import treeData from '../treeData';
+import Tree from './Tree/Tree';
+import styles from './App.module.scss';
 
 
 function App() {
-
     return (
-        <div className="App">
-            <Tree Data={Data}/>
+        <div className={styles.wrapper}>
+            <Tree treeData={treeData}/>
         </div>
     );
 }
